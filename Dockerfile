@@ -14,5 +14,5 @@ FROM gcr.io/distroless/static-debian12
 ENV WEB_APP_ENV=develop
 WORKDIR /root/
 COPY --from=base /app/main .
-EXPOSE 8080
+EXPOSE 3333
 CMD ["./main"]
